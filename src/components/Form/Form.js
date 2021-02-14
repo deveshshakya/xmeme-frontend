@@ -28,7 +28,7 @@ class Form extends Component {
         if (!name || !caption || !url) {
             alert("Field can't be empty.");
         } else {
-            fetch('https://xmeme-restapi.herokuapp.com/memes', {
+            fetch('ec2-52-66-214-28.ap-south-1.compute.amazonaws.com:8081/memes', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

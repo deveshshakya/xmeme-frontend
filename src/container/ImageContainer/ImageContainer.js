@@ -10,7 +10,7 @@ class ImageContainer extends Component {
     }
 
     componentDidMount() {
-        fetch('https://xmeme-restapi.herokuapp.com/memes', {
+        fetch('ec2-52-66-214-28.ap-south-1.compute.amazonaws.com:8081/memes', {
             method: 'get',
             headers: {'Content-Type': 'application/json'}
         })
